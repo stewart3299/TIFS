@@ -24,8 +24,6 @@ This repository provides the official PyTorch implementation of **TIFS-Net**, an
 - [Datasets](#datasets)
 - [Training](#training)
 - [Evaluation](#evaluation)
-- [Pretrained Models](#pretrained-models)
-- [Citation](#citation)
 - [Acknowledgement](#acknowledgement)
 - [License](#license)
 
@@ -179,54 +177,11 @@ TIFS-Net is based on a dual-branch **YOLOv8s** framework. Training settings foll
 | Epochs               | 100          | 100          |
 | NMS IoU threshold    | 0.5          | 0.5          |
 
-```bash
-# DroneVehicle
-python train.py --data configs/dronevehicle.yaml --imgsz 640 --epochs 100 \
-    --device 0 --batch-size 16
-
-# VEDAI
-python train.py --data configs/vedai.yaml --imgsz 1024 --epochs 100 \
-    --device 0 --batch-size 8
-```
-
-> ⚠️ *Adjust `--batch-size` according to your GPU memory. Exact CLI arguments may differ depending on the repository layout; refer to `train.py` / the YOLOv8 configuration for details.*
+*Detailed training and evaluation commands will be added once the code is organized.*
 
 ## Evaluation
 
-```bash
-# DroneVehicle
-python val.py --data configs/dronevehicle.yaml --imgsz 640 \
-    --weights runs/train/tifs-dronevehicle/weights/best.pt --device 0
-
-# VEDAI
-python val.py --data configs/vedai.yaml --imgsz 1024 \
-    --weights runs/train/tifs-vedai/weights/best.pt --device 0
-```
-
 Results are reported in terms of **mAP50** (AP at IoU threshold 0.5).
-
-## Pretrained Models
-
-| Dataset     | mAP50  | Download                                 |
-|-------------|--------|------------------------------------------|
-| DroneVehicle| 83.70  | [TBD / coming soon](#)                    |
-| VEDAI       | 82.50  | [TBD / coming soon](#)                    |
-
-> 📌 Replace the links above with the released checkpoint files (e.g., on GitHub Releases, Baidu Netdisk, or Google Drive).
-
-## Citation
-
-If you find TIFS-Net useful in your research, please consider citing:
-
-```bibtex
-@article{wang2026tifs,
-  title   = {TIFS-Net: Texture-Illumination Enhancement and Frequency-Spatial Fusion Network for Vehicle Detection in Aerial Imagery},
-  author  = {Wang, Wei and Li, Chaofeng},
-  journal = {}, % TODO: update with the publication venue
-  year    = {2026},
-  doi     = {}  % TODO: update with the DOI when available
-}
-```
 
 ## Acknowledgement
 
