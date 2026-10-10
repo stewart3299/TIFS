@@ -41,8 +41,6 @@ TIFS-Net addresses these issues with texture/illumination-aware enhancement and 
 
 ![TIFS-Net architecture](assets/TIFS-Net-overview.png)
 
-> 📌 *Replace the image above with the overall architecture figure (`Fig. 1`) from the paper, e.g., `assets/TIFS-Net-overview.png`.*
-
 TIFS-Net employs two parallel modality-specific branches to extract multi-scale RGB and IR features. The **TIDE** module is embedded at backbone stages **P3, P4, and P5** for adaptive cross-modal exchange, and the **FSCF** module performs deep fusion in the neck by jointly modeling frequency-domain and spatial-domain information.
 
 ## Method
