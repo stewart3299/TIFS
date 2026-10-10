@@ -9373,13 +9373,12 @@ class CrossModalMagicCube3D_Final(nn.Module):
         }
     
     
-
-class CAFusion(TIGEv6):
+class TIDE(TIGEv6):
     def __init__(self, channels, reduction_ratio=4): 
         super().__init__(channels, reduction_ratio)
 
 
-class ADD(FSCFv7):
+class FSCF(FSCFv7):
     def __init__(self, channels, reduction=4):
         super().__init__(channels, reduction)
 

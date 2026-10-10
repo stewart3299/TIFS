@@ -17,7 +17,6 @@ val_ir: E:/project/datas/testdata/images_ir/val # val
 test_ir: E:/project/datas/testdata/images_ir/test
 
 
-
 # Classes
 names:
   0: car

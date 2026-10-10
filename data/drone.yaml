@@ -18,7 +18,6 @@ val_ir: /home/datasets/DroneVehicle/images_ir/val # val
 test_ir: /home/datasets/DroneVehicle/images_ir/test
 
 
-
 # Classes
 names:
   0: car

@@ -76,7 +76,9 @@ from .block import (
     Fusion,
     Concat3,
     RIFusion,
-    CAFusion
+    CAFusion,
+    TIDE,
+    FSCF,
 )
 from .Change import TextureInference
 from .conv import (
